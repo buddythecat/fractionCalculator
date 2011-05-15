@@ -1,0 +1,88 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+#include "\masm32\include\resource.h"
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+100 DIALOGEX 100, 80, 105, 45
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Fraction Calculator"
+FONT 12, "MS Sans Serif", 400, 0, 0x0
+BEGIN
+    EDITTEXT        200,5,2,44,12,ES_RIGHT
+    EDITTEXT        250,60,2,40,12,ES_RIGHT
+    CTEXT           "/",IDC_STATIC,50,2,8,15
+    PUSHBUTTON      "&Enter",300,5,20,20,10,BS_FLAT | WS_GROUP
+    PUSHBUTTON      "&Pop",310,28,20,20,10,BS_FLAT | WS_GROUP
+    PUSHBUTTON      "&+",350,62,20,8,10,BS_FLAT | WS_GROUP
+    PUSHBUTTON      "&-",360,72,20,8,10,BS_FLAT | WS_GROUP
+    PUSHBUTTON      "&*",370,82,20,8,10,BS_FLAT | WS_GROUP
+    PUSHBUTTON      "&/",380,92,20,8,10,BS_FLAT | WS_GROUP
+    PUSHBUTTON      "real mode",301,5,32,43,10,BS_FLAT | WS_GROUP
+    PUSHBUTTON      "frac mode",303,5,32,43,10,BS_FLAT | WS_GROUP | NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "sqrt",351,62,32,28,10,BS_FLAT | WS_GROUP
+    EDITTEXT        202,5,2,95,12,ES_RIGHT | NOT WS_VISIBLE | WS_DISABLED
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    100, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
