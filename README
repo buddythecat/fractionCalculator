@@ -1,0 +1,54 @@
+FractionCalculator -
+	A simple post-fix style fraction calculator, written in assembly 
+	for CSC-250.
+		Rich "Dances With Caterpillars" Tufano
+		github.com/buddythecat/fractionCalculator
+===_FEATURES=========================================================
+	-Adds, Subtracts, Divides, and finds the square-root of fractions
+	-Can convert a fraction to a real, and back to a fraction.
+	-Also adds/subtracts/multiplies/divides real numbers.
+____NOTES/BUGS_______________________________________________________
+	1)	Square-Root - When finding the square root of a real number,
+		the calculator will at first display an absurd number.  Switch
+		back to fraction-mode to see the acurate representation.
+	2)	Switching back and forth between fraction and real mode when
+		  displaying numbers with many trailing decimals can cause
+		  accuracy problems in the real and fraction representation.
+		  *	switching back and forth again will then fix this problem
+____BUILDING__________________________________________________________
+	>>	To build this project, I've included a batch file in the root 
+		  directory that automates the process.  If you'd like to 
+		  build by hand, feel free.
+____FILE/DIR INFO______________________________________________________
+	>>	All source files are located in the src directory, and the
+		  resource files are in the resource directory.
+	>>	Object files created by the assembler are left in the /obj 
+		  directory.
+	>>	All directories marked _ignore contain unused, or old files.  
+		  They are included for reference, or for future/past features
+	>>	Directory Structure
+		-root
+		|-README 				>>	This file
+		|-fracCalcMake.bat		>>	Automated Assembler and Linker
+		|-fracCalcDebugMake.bat	>>	Automated Assembler/Linker for Debug
+		|-fracCalc.fnl.zip		>>	Zip file containing THIS
+		|-src
+		|	\-calcDisplay.inc	>>	Include file binding resource identifies
+		|	|-fracCalc.asm		>>  Application file - draws/runs calculator
+		|	|-fraction.asm		>>	Fraction arithmatic and utility procs
+		|	|-fraction.inc		>>	Listing file for fraction.asm
+		|	|-stack.asm			>>	Procedures for the fraction stack
+		|	|-stack.inc			>>	Listing file for stack.asm
+		|	|-_ignore
+		|		\*				>>	Old source files, no longer used
+		|-res
+		|	|\-resource.h		>>	Resource include for the dialog
+		|	|-calcDisplay.res	>>	Compiled resource for Win32
+		|	|-calcDisplay.rc	>>	Resource script for dialog
+		|	|-calcDisplay.obj 	>>	Assembled resource file
+		|	|-calcDisplay.abs	>>	Don't know
+		|-obj
+		|	|\*					>>	Assembled object files
+		|-bin
+		|	\-fracCalc.exe		>>	Fraction Calculator Application
+		|	|-_ignore			>>	Old versions, testers, etc.
